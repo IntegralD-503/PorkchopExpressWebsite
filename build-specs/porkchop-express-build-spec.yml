@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install -g @quasar/cli
+      - npm ci
+    build:
+      commands:
+        - quasar build
+artifacts:
+  baseDirectory: dist/spa
+  files: 
+    - '**/*'
+
