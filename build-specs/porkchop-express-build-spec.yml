@@ -16,4 +16,4 @@ phases:
 artifacts:
   files: 
     - '**/*'
-    base-directory: 'dist/spa'
+  base-directory: 'dist/spa'
