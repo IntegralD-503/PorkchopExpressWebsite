@@ -9,6 +9,5 @@ phases:
       commands:
         - quasar build
 artifacts:
-  baseDirectory: dist
   files: 
     - '**/*'
