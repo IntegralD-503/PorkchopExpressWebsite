@@ -5,11 +5,14 @@ phases:
     commands:
       - npm install -g @quasar/cli
       - npm ci
-    build:
-      commands:
-        - quasar build
+  build:
+    commands:
+      - quasar build
 
-    post_build:
-      commands:
-        - echo PostBuild Phase
-        - aws s3 sync ./dist $S3_BUCKET
+  post_build:
+    commands:
+      - echo PostBuild Phase
+      - aws s3 sync ./dist $S3_BUCKET
+# artifacts:
+#   files: 
+#     - '**/*'
